@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa conceptual · U2 Historia, teorías y escuelas</title>
+<style>
+  :root{
+    --ink:#1b2140;
+    --muted:#5a6183;
+    --line:#c9cdea;
+    --bg:#f4f6fb;
+  }
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ===== CABECERA ===== */
+  .hero{
+    background: linear-gradient(135deg,#1e2a78 0%, #3b4cca 55%, #5b3fd6 100%);
+    color:#fff;
+    padding:38px 0 32px;
+  }
+  .hero-inner{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 24px 0 84px;
+  }
+  .kicker{
+    margin:0 0 6px;
+    font-size:.78rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:#c3caff;
+    font-weight:600;
+  }
+  .hero h1{
+    margin:0;
+    font-size:clamp(1.4rem, 3.4vw, 2.1rem);
+    line-height:1.2;
+    font-weight:750;
+  }
+  .chips{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:16px 0 0;
+    padding:0;
+  }
+  .chips li{
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:999px;
+    padding:4px 13px;
+    font-size:.8rem;
+    font-weight:600;
+  }
+
+  /* ===== EJE / MAPA ===== */
+  .map{
+    max-width:1040px;
+    margin:0 auto;
+    padding:34px 24px 70px 84px;
+    position:relative;
+  }
+  .map::before{
+    content:"";
+    position:absolute;
+    left:46px;
+    top:34px;
+    bottom:40px;
+    width:3px;
+    border-radius:3px;
+    background:linear-gradient(180deg,#3b4cca 0%, #7c3aed 30%, #0f766e 55%, #b45309 72%, #0e7490 86%, #be123c 100%);
+    opacity:.55;
+  }
+
+  .node{
+    position:relative;
+    margin-bottom:22px;
+  }
+  .node::after{
+    content:"";
+    position:absolute;
+    left:-38px;
+    top:26px;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#fff;
+    border:3px solid var(--c);
+    box-shadow:0 0 0 4px var(--bg);
+  }
+  .node::before{
+    content:"";
+    position:absolute;
+    left:-32px;
+    top:32px;
+    width:32px;
+    height:3px;
+    background:var(--line);
+    border-radius:3px;
+  }
+
+  .card{
+    background:#fff;
+    border-radius:14px;
+    border-left:5px solid var(--c);
+    padding:18px 22px 20px;
+    box-shadow:0 2px 10px rgba(29,35,80,.08);
+  }
+
+  .card h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:0 0 12px;
+    font-size:1.02rem;
+    font-weight:700;
+    letter-spacing:.01em;
+  }
+  .num{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:var(--c);
+    color:#fff;
+    font-size:.82rem;
+    font-weight:700;
+  }
+
+  .card ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .card li{
+    position:relative;
+    padding-left:20px;
+    margin:7px 0;
+    font-size:.93rem;
+    color:#2b3157;
+  }
+  .card li::before{
+    content:"";
+    position:absolute;
+    left:2px;
+    top:.63em;
+    width:8px;
+    height:2px;
+    border-radius:2px;
+    background:var(--c);
+    opacity:.75;
+  }
+  .card li strong{ color:var(--ink); }
+
+  .cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 24px;
+  }
+
+  .note{
+    margin-top:12px;
+    padding:10px 14px;
+    border-radius:10px;
+    background:#f5f7ff;
+    border:1px dashed #ccd3f2;
+    font-size:.9rem;
+    color:#333c6b;
+  }
+  .note strong{ color:var(--ink); }
+
+  /* ===== SECUENCIA ===== */
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+    gap:12px;
+    margin-top:4px;
+  }
+  .step{
+    background:#f6fbfa;
+    border:1px solid #d6ebe7;
+    border-radius:10px;
+    padding:12px 14px;
+  }
+  .step .tag{
+    display:block;
+    font-size:.7rem;
+    font-weight:750;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:#0f766e;
+    margin-bottom:5px;
+  }
+  .step p{
+    margin:0;
+    font-size:.88rem;
+    color:#2b3157;
+  }
+  .step .out{
+    display:block;
+    margin-top:7px;
+    font-size:.82rem;
+    color:#4b5578;
+    font-style:italic;
+  }
+
+  /* ===== EVIDENCIAS ===== */
+  .ev-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:12px;
+  }
+  .ev{
+    background:#fdfaf1;
+    border:1px solid #ece2cb;
+    border-radius:10px;
+    padding:12px 14px;
+  }
+  .ev h3{
+    margin:0 0 7px;
+    font-size:.74rem;
+    font-weight:750;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:#b45309;
+  }
+  .ev p{ margin:0 0 6px; font-size:.88rem; color:#2b3157; }
+  .ev p:last-child{ margin-bottom:0; }
+
+  code{
+    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    font-size:.85em;
+    background:#f0f2fa;
+    border-radius:5px;
+    padding:1px 6px;
+    color:#31396f;
+  }
+
+  /* ===== PIE ===== */
+  .foot{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 24px 48px 84px;
+    font-size:.8rem;
+    color:var(--muted);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:760px){
+    .hero-inner, .map, .foot{ padding-left:18px; padding-right:18px; }
+    .map::before, .node::before, .node::after{ display:none; }
+    .cols{ grid-template-columns:1fr; }
+  }
+
+  /* ===== IMPRESIÓN ===== */
+  @media print{
+    body{ background:#fff; }
+    .hero{ background:#fff; color:#000; border-bottom:2px solid #000; }
+    .kicker{ color:#444; }
+    .chips li{ background:#fff; border:1px solid #999; color:#000; }
+    .map::before{ opacity:1; }
+    .card{ box-shadow:none; border:1px solid #bbb; border-left:5px solid var(--c); }
+    .node{ break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Psicología · Bloque A · Primera evaluación</p>
+    <h1>U2 · Historia, teorías y escuelas</h1>
+    <ul class="chips">
+      <li>8 sesiones</li>
+      <li>CE.PS.2</li>
+      <li>Criterio 2.1</li>
+    </ul>
+  </div>
+</header>
+
+<main class="map">
+
+  <!-- 1 -->
+  <section class="node" style="--c:#3b4cca">
+    <div class="card">
+      <h2><span class="num">1</span> Aprendizajes que debe demostrar el alumnado</h2>
+      <div class="cols">
+        <ul>
+          <li>Identificar las <strong>principales escuelas</strong>.</li>
+          <li>Situarlas en un <strong>contexto histórico y geográfico</strong>.</li>
+          <li>Compararlas por su <strong>objeto, método y conceptos</strong>.</li>
+        </ul>
+        <ul>
+          <li>Atribuir un documento a una corriente <strong>mediante razones</strong>.</li>
+          <li>Explicar <strong>continuidades, rupturas o respuestas</strong> entre perspectivas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="node" style="--c:#7c3aed">
+    <div class="card">
+      <h2><span class="num">2</span> Saberes y problema de partida</h2>
+      <ul>
+        <li>Estructuralismo, funcionalismo, psicoanálisis, Gestalt, conductismo, humanismo, cognitivismo y psicología cultural.</li>
+        <li><strong>Pregunta:</strong> ¿por qué distintas escuelas pueden estudiar un mismo fenómeno de maneras diferentes?</li>
+        <li>El <strong>contexto</strong> explica la aparición de propuestas y permite valorar su alcance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="node" style="--c:#0f766e">
+    <div class="card">
+      <h2><span class="num">3</span> Secuencia orientativa · 8 sesiones</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="tag">Sesiones 1 y 2</span>
+          <p>Recuperar qué cuenta como explicación psicológica; construir una línea temporal y localizar autores y contextos.</p>
+        </div>
+        <div class="step">
+          <span class="tag">Sesiones 3 y 4</span>
+          <p>Comparar objeto, método y conceptos de las escuelas mediante grupos de expertos.</p>
+          <span class="out">Preparar la tabla OP12.</span>
+        </div>
+        <div class="step">
+          <span class="tag">Sesiones 5 y 6</span>
+          <p>Analizar textos representativos y justificar atribuciones.</p>
+          <span class="out">Aplicar distintas perspectivas a un mismo caso como práctica formativa.</span>
+        </div>
+        <div class="step">
+          <span class="tag">Sesiones 7 y 8</span>
+          <p>Integrar genealogías, revisar la tabla comparativa y realizar EX2.</p>
+          <span class="out">Devolver los errores de contextualización y comparación.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="node" style="--c:#b45309">
+    <div class="card">
+      <h2><span class="num">4</span> Evidencias y valoración</h2>
+      <div class="ev-grid">
+        <div class="ev">
+          <h3>Calificables</h3>
+          <p><code>OP12</code> tabla comparativa</p>
+          <p><code>AT2</code> análisis individual de textos</p>
+          <p><code>EX2</code> prueba de integración</p>
+        </div>
+        <div class="ev">
+          <h3>Qué aporta cada una</h3>
+          <p>Los tres se vinculan al criterio <strong>2.1</strong> con indicadores seleccionados.</p>
+        </div>
+        <div class="ev">
+          <h3>Formativas</h3>
+          <p><code>OPm2</code> línea temporal</p>
+          <p><code>AC2</code> comparación de un caso</p>
+          <p><code>D2</code> debate de síntesis</p>
+          <p>No se califica por sí sola la memorización de una lista de nombres.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="node" style="--c:#0e7490">
+    <div class="card">
+      <h2><span class="num">5</span> Integración en el Site</h2>
+      <ul>
+        <li><strong>Reto:</strong> <em>Genealogía de las escuelas</em>.</li>
+        <li>Incorporar una <strong>línea temporal o esquema comparativo</strong> y explicar una <strong>continuidad, ruptura o reacción</strong> entre dos corrientes.</li>
+        <li>Añadir <strong>dos conexiones razonadas</strong> con la definición científica y los métodos de <strong>U1</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="node" style="--c:#be123c">
+    <div class="card">
+      <h2><span class="num">6</span> Conexiones sugeridas</h2>
+      <ul>
+        <li><strong>U1</strong> ayuda a comparar qué consideran <strong>evidencia</strong> las escuelas.</li>
+        <li>Las propuestas sobre <strong>conducta y cognición</strong> se retomarán en <strong>U8</strong> como antecedentes de teorías del aprendizaje.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="node" style="--c:#4d7c0f">
+    <div class="card">
+      <h2><span class="num">7</span> Intervención docente</h2>
+      <ul>
+        <li>Ofrecer <strong>fragmentos breves</strong> con vocabulario contextualizado y modelar una comparación que use los <strong>mismos atributos</strong>.</li>
+        <li>Diferenciar la <strong>importancia histórica</strong> de una escuela y el <strong>respaldo actual</strong> de una afirmación concreta.</li>
+        <li>El <strong>podcast de modalidad A</strong> puede apoyarse en esta unidad.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<p class="foot">Mapa conceptual elaborado a partir del apartado <em>U2 · Historia, teorías y escuelas</em> del documento de desarrollo de las unidades.</p>
+
+</body>
+</html>

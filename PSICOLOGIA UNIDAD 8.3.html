@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U8 Aprendizaje y estrategias</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 500px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 8</h1>
+<p class="subtitle">Aprendizaje y estrategias<br>
+6 sesiones · Tercera evaluación · Bloque C · CE.PS.5 · Criterio 5.3</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U8 – Aprendizaje y estrategias</h2>
+    <p>¿Estudiar mucho implica aprender mejor?<br>
+    Distinguir tipos de aprendizaje<br>
+    y seleccionar estrategias cognitivas y metacognitivas</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Distinguir aprendizaje de maduración o patrones innatos</li>
+          <li>Identificar mecanismos de condicionamiento y aprendizaje social o cognitivo</li>
+          <li>Seleccionar estrategias cognitivas, metacognitivas y de gestión de recursos</li>
+          <li>Explicar la función de motivación, planificación y revisión</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Condicionamiento clásico y operante</li>
+          <li>Aprendizaje por observación y cognitivo</li>
+          <li>Taxonomía y organización del aprendizaje</li>
+          <li>Estrategias, aprendizaje digital, plataformas y conectivismo</li>
+        </ul>
+        <div class="sub">
+          <strong>Pregunta inicial:</strong><br>
+          ¿Estudiar mucho implica aprender mejor?<br><br>
+          Las herramientas digitales se examinan según la tarea que ayudan a resolver.
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (6 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1</span> Distinguir tipos de cambio conductual y analizar casos de asociación entre estímulos</li>
+          <li><span class="sesion">2-3</span> Trabajar consecuencias, refuerzos y aprendizaje social o cognitivo · Comparar modelos y resolver AC8</li>
+          <li><span class="sesion">4-5</span> Analizar estrategias y recursos digitales y elaborar OPp8 con meta, planificación, seguimiento, motivación y revisión</li>
+          <li><span class="sesion">6</span> Integrar mediante EX8 y revisar el plan · Utilizar el Site para auditar cómo se ha aprendido durante el curso</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AC8 (identificación de mecanismos), OPp8 (plan justificado) y EX8</li>
+          <li>Las tres evidencias se registran en 5.3</li>
+          <li><strong>F:</strong> SM8 (prácticas), OP18 (tabla), AT8 (análisis digital) y AU8</li>
+        </ul>
+        <p class="nota">La reflexión personal puede orientar la revisión sin recibir una calificación autónoma.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Auditoría de mi propio aprendizaje</li>
+          <li>Localizar páginas que muestren comprensión, errores de organización corregidos y estrategias útiles</li>
+          <li>Explicar qué se mantendría y qué se cambiaría</li>
+          <li>Incorporar el plan de aprendizaje como evidencia y contrastarlo con lo observado</li>
+        </ul>
+        <p class="nota">Conexiones: U4 y U5 aportan atención, memoria y control ejecutivo · U7 explica motivación y persistencia · U2 contextualiza conductismo y propuestas cognitivas · La unidad favorece una lectura crítica del propio proceso de investigación del podcast</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Distinguir refuerzo negativo y castigo mediante ejemplos claros</li>
+          <li>Pedir que toda estrategia esté vinculada a una meta, unas condiciones y un procedimiento de comprobación</li>
+          <li>Evitar que la unidad se convierta en un catálogo de aplicaciones o de consejos sin justificación psicológica</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

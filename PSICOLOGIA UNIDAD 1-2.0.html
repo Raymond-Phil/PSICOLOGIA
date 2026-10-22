@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U1 Ciencia, profesión e intervención</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 420px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 1</h1>
+<p class="subtitle">Ciencia, profesión e intervención<br>
+6 sesiones · Primera evaluación · Bloque A · CE.PS.1 y CE.PS.2 · Criterios 1.1 y 2.2</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U1 – Ciencia, profesión e intervención</h2>
+    <p>¿Quién decide qué significa estar sano o enfermo?<br>
+    Definir el objeto de la Psicología y su condición científica</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Definir el objeto de la Psicología</li>
+          <li>Explicar su condición científica</li>
+          <li>Distinguir: datos / interpretaciones / hipótesis</li>
+          <li>Reconocer relación con otras disciplinas</li>
+          <li>Seleccionar ámbitos profesionales adecuados</li>
+          <li>Justificar funciones y límites de cada intervención</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Objeto y métodos de la Psicología</li>
+          <li>Teorías y evidencia</li>
+          <li>Profesión y equipos multidisciplinares</li>
+        </ul>
+        <div class="sub">
+          <strong>Pregunta inicial:</strong><br>
+          ¿Quién decide qué significa estar sano o enfermo?<br><br>
+          La lectura de Saborido del documento de sesiones permite distinguir dimensiones biológicas, sociales y valorativas sin anticipar diagnósticos.
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (6 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1</span> Problematizar salud y enfermedad · Lectura guiada y contraste de argumentos · Registrar preguntas y criterios</li>
+          <li><span class="sesion">2-3</span> Transformar afirmación en pregunta investigable · Hipótesis, variables y evidencia · Comparar explicaciones psicológicas vs. pseudocientíficas</li>
+          <li><span class="sesion">4-5</span> Analizar un caso desde varias disciplinas · Reconocer campos profesionales · Elaboración de síntesis visual de funciones y límites</li>
+          <li><span class="sesion">6</span> Aplicación a situaciones nuevas · Síntesis y prueba teórico-práctica · Revisar definición inicial de Psicología</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AC1 (caso multidisciplinar), OP1 (producto de síntesis profesional), EX1</li>
+          <li>AC1 y OP1 → evidencia sobre ámbitos e interdisciplinariedad</li>
+          <li>EX1 → integra bases científicas y aplicación</li>
+          <li><strong>F:</strong> Lectura inicial, análisis guiados y ensayos</li>
+        </ul>
+        <p class="nota">Seleccionar indicadores de 1.1 y 2.2 en la pauta de cada tarea.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Qué es y qué no es la Psicología</li>
+          <li>Incorporar definición propia revisada</li>
+          <li>Dos rasgos científicos</li>
+          <li>Relación con otras disciplinas</li>
+          <li>Una evidencia profesional</li>
+          <li>Formular una pregunta que se retomará al final del curso</li>
+        </ul>
+        <p class="nota">Conexiones: noción de evidencia → U3 · contraste de enfoques → U2</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Modelar diferencia entre discrepar de una conclusión y examinar la calidad de sus argumentos</li>
+          <li>Materiales audiovisuales sobre biología, cultura o neurodiversidad se analizan como posiciones a contrastar</li>
+          <li>Evitar convertir opiniones divulgativas en autoridad científica automática</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

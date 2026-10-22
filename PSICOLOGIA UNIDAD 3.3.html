@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U3 Bases neuropsicológicas de la conducta</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 500px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 3</h1>
+<p class="subtitle">Bases neuropsicológicas de la conducta<br>
+10 sesiones · Primera evaluación · Bloque A · CE.PS.1 · Criterios 1.2 y 1.3</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U3 – Bases neuropsicológicas de la conducta</h2>
+    <p>¿Explicar el cerebro basta para explicar<br>la conducta de una persona?<br>
+    Relacionar organización del sistema nervioso con procesos psicológicos</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Relacionar organización del sistema nervioso, comunicación neuronal, genética y sistema endocrino con procesos psicológicos</li>
+          <li>Interpretar una evidencia neurocientífica distinguiendo observación, inferencia y conclusión</li>
+          <li>Analizar casos de cambios cognitivos o conductuales evitando determinismos y reducciones automáticas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Sistema nervioso, neuronas y glía</li>
+          <li>Sinapsis y neurotransmisión</li>
+          <li>Plasticidad</li>
+          <li>Genética, hormonas y alteraciones neurológicas</li>
+          <li>Técnicas: EEG, neuroimagen y estudios de lesiones</li>
+        </ul>
+        <div class="sub">
+          <strong>Pregunta inicial:</strong><br>
+          ¿Explicar el cerebro basta para explicar la conducta de una persona?
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (10 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1-2</span> Recuperar conocimientos biológicos previos y construir un mapa funcional del sistema nervioso</li>
+          <li><span class="sesion">3-4</span> Modelizar transmisión neuronal y plasticidad · Incorporar genética, sistema endocrino e interacción con el ambiente</li>
+          <li><span class="sesion">5-7</span> Interpretar materiales neurocientíficos y comparar qué información proporcionan · Resolver un caso neuropsicológico con varias hipótesis</li>
+          <li><span class="sesion">8-10</span> Debatir alcance y límites de las explicaciones · Completar AT3 y AC3 · Integrar conceptos en EX3 y revisar</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AT3 (análisis de evidencias), AC3 (caso neuropsicológico) y EX3</li>
+          <li>AT3 se centra en 1.3 · AC3 relaciona 1.2 y 1.3 · EX3 comprueba integración individual</li>
+          <li><strong>F:</strong> mapa OPm3, modelización SM3 y debate D3</li>
+        </ul>
+        <p class="nota">Pedir que se identifique qué dato sostiene cada inferencia.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> De la neurona a la conducta</li>
+          <li>Representar una cadena explicativa de estructura o proceso biológico a fenómeno cognitivo o conductual</li>
+          <li>Comentar qué permite inferir y qué queda abierto</li>
+          <li>Reutilizar el caso o análisis ya realizado</li>
+        </ul>
+        <p class="nota">Conexiones: U1 aporta las reglas de evidencia y causalidad · U4 permite aplicar el conocimiento a percepción y atención · Las alteraciones de memoria se comprenderán después en U5</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Facilitar esquemas de diferente complejidad y una guía de lectura de imágenes o gráficos</li>
+          <li>Mantener en esta unidad la explicación neuropsicológica; el tratamiento sistemático de ansiedad, depresión y adicciones corresponde a U10</li>
+          <li>Un mapa anatómico aislado necesita explicación funcional</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

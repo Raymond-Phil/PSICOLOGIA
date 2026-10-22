@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Conceptual - U4 Percepción y atención</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    color: #1a5490;
+    margin-bottom: 30px;
+  }
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .nodo-central {
+    background: linear-gradient(135deg, #1a5490, #2980b9);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+  }
+  .conector {
+    width: 3px;
+    height: 25px;
+    background: #7f8c8d;
+  }
+  .conector-h {
+    height: 3px;
+    background: #7f8c8d;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nivel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .caja {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    border-left: 5px solid;
+  }
+  .caja h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.05em;
+  }
+  .caja ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.88em;
+    line-height: 1.5;
+  }
+  .caja li { margin-bottom: 4px; }
+  .aprendizajes { border-color: #27ae60; }
+  .aprendizajes h3 { color: #27ae60; }
+  .saberes { border-color: #e67e22; }
+  .saberes h3 { color: #e67e22; }
+  .secuencia { border-color: #8e44ad; }
+  .secuencia h3 { color: #8e44ad; }
+  .evidencias { border-color: #c0392b; }
+  .evidencias h3 { color: #c0392b; }
+  .site { border-color: #16a085; }
+  .site h3 { color: #16a085; }
+  .conexiones { border-color: #2980b9; }
+  .conexiones h3 { color: #2980b9; }
+  .docente { border-color: #d35400; }
+  .docente h3 { color: #d35400; }
+  .pregunta {
+    background: #fff3cd;
+    border: 2px dashed #e67e22;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    color: #856404;
+  }
+  .etiqueta {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 2px;
+    color: #34495e;
+  }
+</style>
+</head>
+<body>
+
+<h1>🧠 Mapa Conceptual — U4: Percepción y atención</h1>
+
+<div class="mapa">
+
+  <!-- Nodo central -->
+  <div class="nodo-central">
+    U4 · PERCEPCIÓN Y ATENCIÓN<br>
+    <small style="font-weight:normal; opacity:0.9;">7 sesiones · Primera evaluación · Bloque B · CE.PS.3 · Criterios 3.1 y 3.2</small>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Pregunta de partida -->
+  <div class="pregunta">
+    ❓ Pregunta inicial: <strong>¿Vemos la realidad tal como es?</strong><br>
+    <small>(Las ilusiones y tareas atencionales permiten iniciar el análisis y contrastar explicaciones)</small>
+  </div>
+
+  <div class="conector"></div>
+  <div class="conector-h"></div>
+
+  <!-- Nivel 1: Aprendizajes y Saberes -->
+  <div class="nivel">
+    <div class="caja aprendizajes">
+      <h3>🎯 Aprendizajes</h3>
+      <ul>
+        <li>Distinguir sensación, percepción y atención</li>
+        <li>Explicar el carácter activo de la percepción y los factores que influyen en ella</li>
+        <li>Reconocer tipos y límites de la atención</li>
+        <li>Aplicar el conocimiento a situaciones de aprendizaje, publicidad, testimonio u otras tareas cotidianas</li>
+      </ul>
+    </div>
+
+    <div class="caja saberes">
+      <h3>📚 Saberes</h3>
+      <ul>
+        <li><span class="etiqueta">Teorías perceptivas</span><span class="etiqueta">Organización</span></li>
+        <li><span class="etiqueta">Contexto</span><span class="etiqueta">Expectativas</span></li>
+        <li><span class="etiqueta">Atención selectiva</span><span class="etiqueta">Sostenida</span><span class="etiqueta">Dividida</span></li>
+        <li><span class="etiqueta">Ilusiones</span><span class="etiqueta">Dificultades asociadas</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Nivel 2: Secuencia -->
+  <div class="caja secuencia" style="max-width: 700px;">
+    <h3>📅 Secuencia orientativa (7 sesiones)</h3>
+    <ul style="column-count: 2; column-gap: 20px;">
+      <li><strong>S1-2:</strong> Explorar figuras ambiguas e ilusiones y registrar observaciones. Construir explicación perceptiva guiada</li>
+      <li><strong>S3-4:</strong> Analizar imágenes o anuncios y practicar tareas de atención. Comparar resultados y límites sin atribuir diagnósticos</li>
+      <li><strong>S5-6:</strong> Resolver caso de errores perceptivos o distractores. Formular recomendaciones para entorno académico (transferencia)</li>
+      <li><strong>S7:</strong> Integrar conceptos en EX4 y revisar AT4 y AC4. Preparar H1 con U1 a U4</li>
+    </ul>
+  </div>
+
+  <div class="conector"></div>
+  <div class="conector-h"></div>
+
+  <!-- Nivel 3: Evidencias, Site, Conexiones -->
+  <div class="nivel">
+    <div class="caja evidencias">
+      <h3>✅ Evidencias y valoración</h3>
+      <ul>
+        <li><strong>Calificables (C):</strong> AT4 (análisis de imagen/situación, 3.1), AC4 (caso perceptivo/atencional, 3.1 y 3.2), EX4</li>
+        <li><strong>Formativas (F):</strong> SM4 experiencias, OP4 recomendaciones, D4 debate</li>
+        <li>⚠️ El criterio 3.2 inicia aquí su registro y continuará en U5 sin adquirir otro peso</li>
+      </ul>
+    </div>
+
+    <div class="caja site">
+      <h3>🌐 Integración en el Site</h3>
+      <ul>
+        <li><strong>Reto:</strong> ¿Vemos la realidad tal como es?</li>
+        <li>Seleccionar una ilusión o situación atencional y explicar mecanismos y factores</li>
+        <li>Incorporar la evidencia comentada y dos conexiones</li>
+        <li><strong>H1:</strong> revisará síntesis, rigor, relaciones y fuentes de U1 a U4</li>
+      </ul>
+    </div>
+
+    <div class="caja conexiones">
+      <h3>🔗 Conexiones sugeridas</h3>
+      <ul>
+        <li><strong>U3:</strong> aporta bases de procesamiento</li>
+        <li><strong>U5:</strong> permitirá explicar qué ocurre con lo atendido al codificar y recuperar información</li>
+        <li>Las relaciones con aprendizaje pueden quedar planteadas para <strong>U8</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Nivel 4: Intervención docente -->
+  <div class="caja docente" style="max-width: 700px;">
+    <h3>👩‍🏫 Intervención docente</h3>
+    <ul style="column-count: 2; column-gap: 20px;">
+      <li>Reducir la exposición continuada y acompañar cada demostración con preguntas de interpretación</li>
+      <li>Acordar condiciones sencillas de observación</li>
+      <li>⚠️ Evitar presentar una experiencia informal de aula como resultado generalizable</li>
+      <li>⚠️ Las dificultades en una tarea <strong>no equivalen</strong> a un trastorno de atención</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U6 Lenguaje, pensamiento, inteligencia y creatividad</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 520px;
+  }
+  .central h2 { font-size: 1.35rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 6</h1>
+<p class="subtitle">Lenguaje, pensamiento, inteligencia y creatividad<br>
+11 sesiones · Segunda evaluación · Bloque C · CE.PS.4 · Criterios 4.1, 4.2 y 4.3</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U6 – Lenguaje, pensamiento, inteligencia y creatividad</h2>
+    <p>¿Qué significa ser inteligente?<br>
+    ¿Cómo influye el lenguaje en las representaciones y soluciones?</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Comparar concepciones de inteligencia y límites de su medida</li>
+          <li>Explicar relaciones entre lenguaje y pensamiento</li>
+          <li>Producir soluciones diversas y adaptadas a un problema</li>
+          <li>La creatividad se demuestra generando, comparando y justificando alternativas, además de conocer su definición</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Evolución del concepto de inteligencia, teorías actuales y medida</li>
+          <li>Desarrollo y funciones del lenguaje</li>
+          <li>Representaciones y tipos de pensamiento</li>
+          <li>Creatividad y adaptación</li>
+        </ul>
+        <div class="sub">
+          <strong>Preguntas iniciales:</strong><br>
+          ¿Qué significa ser inteligente?<br>
+          ¿Cómo influye el lenguaje en las representaciones y soluciones?
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (11 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1-3</span> Contrastar perfiles de capacidades, evolución de teorías y formas de medida · Construir una tabla comparativa y analizar inferencias</li>
+          <li><span class="sesion">4-6</span> Leer documentos sobre lenguaje y pensamiento · Explicar tesis, conceptos y relaciones utilizando ejemplos</li>
+          <li><span class="sesion">7-9</span> Realizar un taller creativo: definir el problema, generar opciones, seleccionar y justificar una respuesta adaptada · Registrar decisiones</li>
+          <li><span class="sesion">10-11</span> Integrar los tres núcleos mediante EX6 · Revisar los análisis y realizar una autoevaluación formativa del proceso creativo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AC6 (medición y adaptación) para 4.1, AT6 (lenguaje y pensamiento) para 4.2, SM6 (taller) para 4.3, y EX6</li>
+          <li>AT6 y AC6 pueden integrarse si se preserva la valoración diferenciada</li>
+          <li><strong>F:</strong> tabla OP16, debate D6 y AU6</li>
+        </ul>
+        <p class="nota">Mantener la evidencia práctica de creatividad.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Pensar, hablar, resolver</li>
+          <li>Crear una red que relacione los cuatro núcleos de la unidad</li>
+          <li>Incorporar la comparación de concepciones de inteligencia o una solución creativa comentada</li>
+          <li>Explicar criterios de elección y posibles alternativas</li>
+        </ul>
+        <p class="nota">Conexiones: U5 aporta planificación, memoria de trabajo y flexibilidad · U2 contextualiza las tradiciones teóricas · U7 permitirá estudiar qué activa y sostiene el esfuerzo al resolver un problema</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Distinguir la descripción de teorías de su grado de respaldo y alcance</li>
+          <li>Evitar convertir tests de aula en etiquetas sobre el alumnado</li>
+          <li>El taller valora la pertinencia, diversidad y justificación de soluciones; el diseño vistoso no sustituye la adaptación al problema planteado</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U4 Percepción y atención</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 480px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 4</h1>
+<p class="subtitle">Percepción y atención<br>
+7 sesiones · Primera evaluación · Bloque B · CE.PS.3 · Criterios 3.1 y 3.2</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U4 – Percepción y atención</h2>
+    <p>¿Vemos la realidad tal como es?<br>
+    Distinguir sensación, percepción y atención<br>
+    y explicar el carácter activo de la percepción</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Distinguir sensación, percepción y atención</li>
+          <li>Explicar el carácter activo de la percepción y los factores que influyen en ella</li>
+          <li>Reconocer tipos y límites de la atención</li>
+          <li>Aplicar el conocimiento a situaciones de aprendizaje, publicidad, testimonio u otras tareas cotidianas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Teorías y elementos de la percepción</li>
+          <li>Organización perceptiva</li>
+          <li>Contexto y expectativas</li>
+          <li>Atención selectiva, sostenida y dividida</li>
+          <li>Dificultades asociadas</li>
+        </ul>
+        <div class="sub">
+          <strong>Pregunta inicial:</strong><br>
+          ¿Vemos la realidad tal como es?<br><br>
+          Las ilusiones y tareas atencionales permiten iniciar el análisis y contrastar explicaciones.
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (7 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1-2</span> Explorar figuras ambiguas e ilusiones y registrar observaciones · Construir una explicación perceptiva guiada</li>
+          <li><span class="sesion">3-4</span> Analizar imágenes o anuncios y practicar tareas de atención · Comparar resultados y límites sin atribuir diagnósticos</li>
+          <li><span class="sesion">5-6</span> Resolver un caso de errores perceptivos o distractores · Formular recomendaciones para un entorno académico como práctica de transferencia</li>
+          <li><span class="sesion">7</span> Integrar conceptos en EX4 y revisar AT4 y AC4 · Preparar H1 con U1 a U4</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AT4 (análisis de imagen o situación) para 3.1, AC4 (caso perceptivo o atencional) para 3.1 y 3.2, y EX4</li>
+          <li><strong>F:</strong> SM4 (experiencias), OP4 (recomendaciones) y D4 (debate)</li>
+        </ul>
+        <p class="nota">El criterio 3.2 inicia aquí su registro y continuará en U5 sin adquirir otro peso.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Vemos la realidad tal como es</li>
+          <li>Seleccionar una ilusión o situación atencional y explicar mecanismos y factores</li>
+          <li>Incorporar la evidencia comentada y dos conexiones</li>
+          <li>H1 revisará síntesis, rigor, relaciones y fuentes de las cuatro primeras unidades</li>
+        </ul>
+        <p class="nota">Conexiones: U3 aporta bases de procesamiento · U5 permitirá explicar qué ocurre con lo atendido al codificar y recuperar información · Las relaciones con aprendizaje pueden quedar planteadas para U8</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Reducir la exposición continuada y acompañar cada demostración con preguntas de interpretación</li>
+          <li>Acordar condiciones sencillas de observación y evitar presentar una experiencia informal de aula como resultado generalizable</li>
+          <li>Las dificultades en una tarea no equivalen a un trastorno de atención</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

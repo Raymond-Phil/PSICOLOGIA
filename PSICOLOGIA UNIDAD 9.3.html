@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U9 Grupos, influencia y redes sociales</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 500px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 9</h1>
+<p class="subtitle">Grupos, influencia y redes sociales<br>
+5 sesiones · Tercera evaluación · Bloque D · CE.PS.7 · Criterios 7.1, 7.2 y 7.3</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U9 – Grupos, influencia y redes sociales</h2>
+    <p>¿Decidiríamos igual si estuviéramos solos?<br>
+    Explicar la socialización y su influencia<br>
+    en conducta e identidad</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Explicar la socialización y su influencia en conducta e identidad</li>
+          <li>Reconocer cognición e influencia social, procesos grupales y vulnerabilidad</li>
+          <li>Analizar oportunidades y amenazas del uso de redes</li>
+          <li>Transformar el análisis en actuaciones preventivas y prosociales fundamentadas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Normas, agentes de socialización, actitudes y persuasión</li>
+          <li>Presión de grupo, atribuciones, estereotipos y prejuicios</li>
+          <li>Discriminación y disonancia</li>
+          <li>Conformidad, masas, identidad, polarización y redes</li>
+        </ul>
+        <div class="sub">
+          <strong>Pregunta inicial:</strong><br>
+          ¿Decidiríamos igual si estuviéramos solos?<br><br>
+          Se concentran los contenidos en pocos casos que permitan comparar procesos.
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (5 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1</span> Analizar socialización y un mensaje persuasivo o una situación de cognición social · Preparar AT9</li>
+          <li><span class="sesion">2</span> Estudiar conformidad, difusión de responsabilidad y polarización mediante casos y práctica guiada</li>
+          <li><span class="sesion">3</span> Resolver AC9 sobre dinámica grupal o vulnerabilidad y justificar una respuesta cooperativa</li>
+          <li><span class="sesion">4-5</span> Elaborar OPd9 (DAFO y CAME sobre redes) · Integrar y comprobar individualmente mediante EX9</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AT9 para 7.1, AC9 para 7.2, OPd9 para 7.3, y EX9</li>
+          <li>Pueden organizarse entregas integradas manteniendo desempeños diferenciados</li>
+          <li><strong>F:</strong> SM9, debate D9 y AU9</li>
+        </ul>
+        <p class="nota">En el DAFO identificar debilidades, amenazas, fortalezas y oportunidades; en CAME corregir, afrontar, mantener y explotar de forma coherente.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Un fenómeno social bajo la lupa</li>
+          <li>Analizar un caso de conformidad, estereotipo, polarización o redes</li>
+          <li>Incorporar una evidencia y una lectura de factores de riesgo y protección</li>
+          <li>Las propuestas preventivas deben derivar del mecanismo psicológico identificado</li>
+        </ul>
+        <p class="nota">Conexiones: U4 ayuda a interpretar percepción y sesgos · U7 aporta emoción y motivación · U8 explica aprendizaje social · El criterio 7.4 sobre necesidades y recursos comunitarios se reserva para U10</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Utilizar materiales públicos o situaciones simuladas sin exigir acceso a cuentas ni tiempos personales de uso</li>
+          <li>Las cinco sesiones requieren concentrar actividades y evitar correcciones duplicadas</li>
+          <li>Diferenciar crítica de una conducta, explicación de un proceso y juicio sobre una persona o un grupo</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

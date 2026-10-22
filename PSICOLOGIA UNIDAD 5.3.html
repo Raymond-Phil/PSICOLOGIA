@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual - U5 Memoria y funciones ejecutivas</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .central {
+    background: linear-gradient(135deg, #1e3a5f, #2b6cb0);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30,58,95,0.3);
+    max-width: 500px;
+  }
+  .central h2 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .central p { font-size: 0.9rem; opacity: 0.9; }
+
+  .branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .branch {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-top: 5px solid;
+  }
+  .branch.azul { border-color: #3182ce; }
+  .branch.verde { border-color: #38a169; }
+  .branch.naranja { border-color: #dd6b20; }
+  .branch.morado { border-color: #805ad5; }
+  .branch.rojo { border-color: #e53e3e; }
+  .branch.teal { border-color: #319795; }
+
+  .branch-header {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  .azul .branch-header { background: #3182ce; }
+  .verde .branch-header { background: #38a169; }
+  .naranja .branch-header { background: #dd6b20; }
+  .morado .branch-header { background: #805ad5; }
+  .rojo .branch-header { background: #e53e3e; }
+  .teal .branch-header { background: #319795; }
+
+  .branch-content {
+    padding: 1rem;
+    font-size: 0.88rem;
+  }
+  .branch-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .branch-content li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+  .branch-content li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #718096;
+  }
+  .sub {
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e2e8f0;
+  }
+  .sub strong { color: #2d3748; }
+  .nota {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .sesion {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mapa Conceptual – Unidad 5</h1>
+<p class="subtitle">Memoria y funciones ejecutivas<br>
+10 sesiones · Segunda evaluación · Bloque B · CE.PS.3 · Criterios 3.2 y 3.3</p>
+
+<div class="map">
+
+  <!-- Nodo central -->
+  <div class="central">
+    <h2>U5 – Memoria y funciones ejecutivas</h2>
+    <p>¿Recordar es reproducir lo vivido?<br>
+    ¿Qué procesos ayudan a organizar una acción<br>
+    y cambiar de estrategia?</p>
+  </div>
+
+  <!-- Ramas -->
+  <div class="branches">
+
+    <!-- Aprendizajes -->
+    <div class="branch azul">
+      <div class="branch-header">Aprendizajes a demostrar</div>
+      <div class="branch-content">
+        <ul>
+          <li>Explicar sistemas y procesos de memoria, factores del recuerdo y fenómenos de olvido o distorsión</li>
+          <li>Reconocer memoria de trabajo, inhibición, flexibilidad y planificación</li>
+          <li>Aplicarlas a decisiones académicas y cotidianas</li>
+          <li>Fundamentar una mejora de estudio o de organización</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saberes -->
+    <div class="branch verde">
+      <div class="branch-header">Saberes y problema de partida</div>
+      <div class="branch-content">
+        <ul>
+          <li>Codificación, almacenamiento y recuperación</li>
+          <li>Modelos y tipos de memoria</li>
+          <li>Olvido y alteraciones</li>
+          <li>Desarrollo adolescente de funciones ejecutivas</li>
+        </ul>
+        <div class="sub">
+          <strong>Preguntas iniciales:</strong><br>
+          ¿Recordar es reproducir lo vivido?<br>
+          ¿Qué procesos ayudan a organizar una acción y cambiar de estrategia?
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia -->
+    <div class="branch naranja">
+      <div class="branch-header">Secuencia orientativa (10 sesiones)</div>
+      <div class="branch-content">
+        <ul>
+          <li><span class="sesion">1-2</span> Comparar recuerdo inmediato y diferido y construir el viaje de un recuerdo mediante un esquema</li>
+          <li><span class="sesion">3-4</span> Trabajar interferencia, claves y reconstrucción · Analizar un texto o experiencia sobre olvido y falsos recuerdos</li>
+          <li><span class="sesion">5-7</span> Experimentar memoria de trabajo, inhibición y cambio de criterio · Utilizar rompecabezas cooperativo para explicar funciones ejecutivas</li>
+          <li><span class="sesion">8-10</span> Resolver un caso de planificación o toma de decisiones · Integrar en EX5 y proponer una mejora fundamentada de estudio</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidencias -->
+    <div class="branch morado">
+      <div class="branch-header">Evidencias y valoración</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>C:</strong> AT5 centrado en memoria y 3.2, AC5 centrado en funciones ejecutivas y 3.3, y EX5 para ambos criterios</li>
+          <li><strong>F:</strong> SM5 (prácticas), OP5 (mejora de estudio) y CO5 (revisión cooperativa)</li>
+        </ul>
+        <p class="nota">Las evidencias de 3.2 se incorporan a las obtenidas en U4.</p>
+      </div>
+    </div>
+
+    <!-- Integración Site -->
+    <div class="branch rojo">
+      <div class="branch-header">Integración en el Site</div>
+      <div class="branch-content">
+        <ul>
+          <li><strong>Reto:</strong> Cómo recuerdo, planifico y decido</li>
+          <li>Analizar una situación académica o ficticia</li>
+          <li>Seleccionar la evidencia y explicar una mejora concreta</li>
+          <li>La revisión permite comprobar si el cambio de estrategia responde al problema identificado y no a una recomendación genérica</li>
+        </ul>
+        <p class="nota">Conexiones: U4 explica las condiciones perceptivas y atencionales · U6 utiliza información y control ejecutivo para pensar y crear · U8 retomará las estrategias de estudio dentro de una teoría más amplia del aprendizaje</p>
+      </div>
+    </div>
+
+    <!-- Intervención docente -->
+    <div class="branch teal">
+      <div class="branch-header">Intervención docente</div>
+      <div class="branch-content">
+        <ul>
+          <li>Proporcionar una guía para separar memoria de trabajo y memoria a largo plazo</li>
+          <li>Pedir ejemplos y contraejemplos de cada función ejecutiva</li>
+          <li>Los errores en una práctica se utilizan para aprender; no sirven para etiquetar capacidades personales ni para emitir evaluaciones clínicas</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

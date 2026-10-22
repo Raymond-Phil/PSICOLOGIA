@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Conceptual - U1 Ciencia, profesión e intervención</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    color: #1a5490;
+    margin-bottom: 30px;
+  }
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .nodo-central {
+    background: linear-gradient(135deg, #1a5490, #2980b9);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+  }
+  .conector {
+    width: 3px;
+    height: 25px;
+    background: #7f8c8d;
+  }
+  .conector-h {
+    height: 3px;
+    background: #7f8c8d;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nivel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .caja {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    border-left: 5px solid;
+  }
+  .caja h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.05em;
+  }
+  .caja ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.88em;
+    line-height: 1.5;
+  }
+  .caja li { margin-bottom: 4px; }
+  .aprendizajes { border-color: #27ae60; }
+  .aprendizajes h3 { color: #27ae60; }
+  .saberes { border-color: #e67e22; }
+  .saberes h3 { color: #e67e22; }
+  .secuencia { border-color: #8e44ad; }
+  .secuencia h3 { color: #8e44ad; }
+  .evidencias { border-color: #c0392b; }
+  .evidencias h3 { color: #c0392b; }
+  .site { border-color: #16a085; }
+  .site h3 { color: #16a085; }
+  .conexiones { border-color: #2980b9; }
+  .conexiones h3 { color: #2980b9; }
+  .docente { border-color: #d35400; }
+  .docente h3 { color: #d35400; }
+  .pregunta {
+    background: #fff3cd;
+    border: 2px dashed #e67e22;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    color: #856404;
+  }
+  .etiqueta {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 2px;
+    color: #34495e;
+  }
+</style>
+</head>
+<body>
+
+<h1>🧠 Mapa Conceptual — U1: Ciencia, profesión e intervención</h1>
+
+<div class="mapa">
+
+  <!-- Nodo central -->
+  <div class="nodo-central">
+    U1 · CIENCIA, PROFESIÓN E INTERVENCIÓN<br>
+    <small style="font-weight:normal; opacity:0.9;">6 sesiones · Bloque A · CE.PS.1 y CE.PS.2</small>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Pregunta de partida -->
+  <div class="pregunta">
+    ❓ Pregunta inicial: <strong>¿Quién decide qué significa estar sano o enfermo?</strong><br>
+    <small>(Saborido: dimensiones biológicas, sociales y valorativas)</small>
+  </div>
+
+  <div class="conector"></div>
+  <div class="conector-h"></div>
+
+  <!-- Nivel 1: Aprendizajes y Saberes -->
+  <div class="nivel">
+    <div class="caja aprendizajes">
+      <h3>🎯 Aprendizajes</h3>
+      <ul>
+        <li>Definir el objeto de la Psicología</li>
+        <li>Explicar su condición científica</li>
+        <li>Distinguir datos, interpretaciones e hipótesis</li>
+        <li>Relacionar con otras disciplinas</li>
+        <li>Seleccionar ámbitos profesionales</li>
+        <li>Justificar funciones y límites de cada intervención</li>
+      </ul>
+    </div>
+
+    <div class="caja saberes">
+      <h3>📚 Saberes</h3>
+      <ul>
+        <li>Objeto y métodos de la Psicología</li>
+        <li>Teorías y evidencia</li>
+        <li>Profesión y equipos multidisciplinares</li>
+        <li><span class="etiqueta">Biología</span><span class="etiqueta">Sociedad</span><span class="etiqueta">Valores</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Nivel 2: Secuencia -->
+  <div class="caja secuencia" style="max-width: 700px;">
+    <h3>📅 Secuencia orientativa (6 sesiones)</h3>
+    <ul style="column-count: 2; column-gap: 20px;">
+      <li><strong>S1:</strong> Problematizar salud/enfermedad · Lectura guiada</li>
+      <li><strong>S2-3:</strong> Transformar afirmaciones en preguntas investigables · Hipótesis, variables y evidencia</li>
+      <li><strong>S2-3:</strong> Comparar explicaciones psicológicas vs. pseudociencia</li>
+      <li><strong>S4-5:</strong> Análisis multidisciplinar de un caso · Campos profesionales</li>
+      <li><strong>S4-5:</strong> Síntesis visual de funciones y límites</li>
+      <li><strong>S6:</strong> Aplicación a situaciones nuevas · Prueba teórico-práctica</li>
+    </ul>
+  </div>
+
+  <div class="conector"></div>
+  <div class="conector-h"></div>
+
+  <!-- Nivel 3: Evidencias, Site, Conexiones -->
+  <div class="nivel">
+    <div class="caja evidencias">
+      <h3>✅ Evidencias y valoración</h3>
+      <ul>
+        <li><strong>Calificables (C):</strong> AC1 (caso multidisciplinar), OPi1 (síntesis profesional), EX1</li>
+        <li><strong>Formativas (F):</strong> lectura inicial, análisis guiados, ensayos</li>
+        <li>Indicadores de criterios 1.1 y 2.2</li>
+      </ul>
+    </div>
+
+    <div class="caja site">
+      <h3>🌐 Integración en el Site</h3>
+      <ul>
+        <li><strong>Reto:</strong> ¿Qué es y qué no es la Psicología?</li>
+        <li>Definición propia revisada</li>
+        <li>Dos rasgos científicos</li>
+        <li>Relación con otras disciplinas</li>
+        <li>Una evidencia profesional</li>
+        <li>Pregunta abierta para todo el curso</li>
+      </ul>
+    </div>
+
+    <div class="caja conexiones">
+      <h3>🔗 Conexiones sugeridas</h3>
+      <ul>
+        <li><strong>U3:</strong> noción de evidencia</li>
+        <li><strong>U2:</strong> contraste entre enfoques</li>
+        <li>Enlaces anticipados se revisarán al estudiar su contenido</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Nivel 4: Intervención docente -->
+  <div class="caja docente" style="max-width: 700px;">
+    <h3>👩‍🏫 Intervención docente</h3>
+    <ul style="column-count: 2; column-gap: 20px;">
+      <li>Modelar la diferencia entre <em>discrepar</em> de una conclusión y <em>examinar</em> la calidad de sus argumentos</li>
+      <li>Analizar materiales audiovisuales (biología, cultura, neurodiversidad) como posiciones a contrastar</li>
+      <li>⚠️ Evitar convertir opiniones divulgativas en autoridad científica automática</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

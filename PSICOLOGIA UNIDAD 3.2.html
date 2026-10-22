@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Conceptual - U3 Bases neuropsicológicas</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    color: #1a5490;
+    margin-bottom: 30px;
+  }
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .nodo-central {
+    background: linear-gradient(135deg, #1a5490, #2980b9);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+  }
+  .conector {
+    width: 3px;
+    height: 25px;
+    background: #7f8c8d;
+  }
+  .conector-h {
+    height: 3px;
+    background: #7f8c8d;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nivel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .caja {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    border-left: 5px solid;
+  }
+  .caja h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.05em;
+  }
+  .caja ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.88em;
+    line-height: 1.5;
+  }
+  .caja li { margin-bottom: 4px; }
+  .aprendizajes { border-color: #27ae60; }
+  .aprendizajes h3 { color: #27ae60; }
+  .saberes { border-color: #e67e22; }
+  .saberes h3 { color: #e67e22; }
+  .secuencia { border-color: #8e44ad; }
+  .secuencia h3 { color: #8e44ad; }
+  .evidencias { border-color: #c0392b; }
+  .evidencias h3 { color: #c0392b; }
+  .site { border-color: #16a085; }
+  .site h3 { color: #16a085; }
+  .conexiones { border-color: #2980b9; }
+  .conexiones h3 { color: #2980b9; }
+  .docente { border-color: #d35400; }
+  .docente h3 { color: #d35400; }
+  .pregunta {
+    background: #fff3cd;
+    border: 2px dashed #e67e22;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    color: #856404;
+  }
+  .etiqueta {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 2px;
+    color: #34495e;
+  }
+</style>
+</head>
+<body>
+
+<h1>🧠 Mapa Conceptual — U3: Bases neuropsicológicas de la conducta</h1>
+
+<div class="mapa">
+
+  <!-- Nodo central -->
+  <div class="nodo-central">
+    U3 · BASES NEUROPSICOLÓGICAS DE LA CONDUCTA<br>
+    <small style="font-weight:normal; opacity:0.9;">10 sesiones · Primera evaluación · Bloque A · CE.PS.1 · Criterios 1.2 y 1.3</small>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Pregunta de partida -->
+  <div class="pregunta">
+    ❓ Pregunta inicial: <strong>¿Explicar el cerebro basta para explicar la conducta de una persona?</strong><br>
+    <small>(Evitar determinismos y reducciones automáticas entre biología y comportamiento)</small>
+  </div>
+
+  <div class="conector"></div>
+  <div class="conector-h"></div>
+
+  <!-- Nivel 1: Aprendizajes y Saberes -->
+  <div class="nivel">
+    <div class="caja aprendizajes">
+      <h3>🎯 Aprendizajes</h3>
+      <ul>
+        <li>Relacionar sistema nervioso, comunicación neuronal, genética y sistema endocrino con procesos psicológicos</li>
+        <li>Interpretar evidencia neurocientífica distinguiendo observación, inferencia y conclusión</li>
+        <li>Analizar casos de cambios cognitivos o conductuales evitando determinismos</li>
+      </ul>
+    </div>
+
+    <div class="caja saberes">
+      <h3>📚 Saberes</h3>
+      <ul>
+        <li><span class="etiqueta">Sistema nervioso</span><span class="etiqueta">Neuronas</span><span class="etiqueta">Glia</span></li>
+        <li><span class="etiqueta">Sinapsis</span><span class="etiqueta">Neurotransmisión</span><span class="etiqueta">Plasticidad</span></li>
+        <li><span class="etiqueta">Genética</span><span class="etiqueta">Hormonas</span><span class="etiqueta">Alteraciones</span></li>
+        <li>Técnicas: <span class="etiqueta">EEG</span><span class="etiqueta">Neuroimagen</span><span class="etiqueta">Lesiones</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="conector"></div>
+
+  <!-- Nivel 2: Secuencia -->
+  <div class="caja secuencia" style="max-width: 700px;">
+    <h3>📅 Secuencia orientativa (10 sesiones)</h3>
+    <ul style="column-count: 2; column-gap: 20px;">
+      <li><strong>S1-2:</strong> Recuperar conocimientos biológicos previos y construir mapa funcional del sistema nervioso</li>
+      <li><strong>S3-4:</strong> Modelizar transmisión
